@@ -395,6 +395,14 @@
       color: rgba(237,233,224,0.7);
       font-family: 'SF Mono','Fira Code',monospace;
     }
+
+    #monogs-credit {
+      position: fixed; bottom: 10px; left: 14px; z-index: 5;
+      font-size: 9px; color: rgba(255,255,255,0.1); text-decoration: none;
+      letter-spacing: 0.04em; pointer-events: all;
+      transition: color 0.2s;
+    }
+    #monogs-credit:hover { color: rgba(255,255,255,0.35); }
   </style>
 </head>
 <body>
@@ -501,6 +509,9 @@
   <!-- Drawer -->
   <div id="drawer-overlay"></div>
   <div id="drawer-panel"></div>
+
+  <!-- Credit -->
+  <a id="monogs-credit" href="https://github.com/muskie82/MonoGS" target="_blank" rel="noopener">3D reconstruction · MonoGS</a>
 
   <script type="module" src="/src/main.ts"></script>
 </body>
